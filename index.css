@@ -1,0 +1,141 @@
+body * {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: #fff;
+
+  /* padding-top: 60px; */
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  background: linear-gradient(135deg, #151515, #313438);
+  padding: 25px 30px;
+  border-radius: 5px;
+}
+.container .title {
+  font-size: 25px;
+  font-weight: 700;
+  color: antiquewhite;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  /* margin-bottom: 1rem; */
+}
+.container .sub-title {
+  color: #b5651d;
+}
+.container .title ::before {
+  margin-left: 34%;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  background: #b5651d;
+  width: 45px;
+}
+.container form .user-detailes {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  margin: 20px 0 15px 0;
+}
+form .user-detailes .input-box,
+.date-joining {
+  width: calc((100% / 2) -20px);
+  margin-top: 1rem;
+  margin-bottom: 1px;
+}
+
+.user-detailes .input-box .deatiles {
+  font-weight: 500px;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+  font-size: 15px;
+  color: #f99137;
+  /* display: block; */
+}
+.user-detailes .input-box .sub-input,
+.coustom-selec {
+  height: 40px;
+  width: 100%;
+
+  border: 1px solid #f99137;
+  border-radius: 5px;
+  outline: none;
+  background-color: #313438;
+  margin: 1px;
+  padding: 5px;
+
+  /* border-bottom-width: 20px; */
+}
+.user-detailes .input-box .sub-input:focus,
+.user-detailes .input-box .sub-input:valid {
+  color: #fff;
+}
+.sub-font {
+  font-size: 10px;
+  color: #fff;
+}
+.coustom-selec {
+  position: relative;
+  width: 100%;
+  height: 25px;
+}
+.coustom-selec {
+  color: #fff;
+  height: 40px;
+}
+.btn {
+  height: 45px;
+  margin: 45px 0;
+}
+.btn input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #151515;
+  background-color: #b5651d;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.btn input:hover {
+  background-color: #313438;
+  color: #fff;
+}
+@media (max-width: 584px) {
+  .container {
+    max-width: 100%;
+  }
+  form .user-detailes .input-box {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1px;
+  }
+}
+.name-container {
+  position: relative;
+}
+.name-container .input-box {
+  width: 40%;
+  display: inline-block;
+}
+.last-name {
+  position: absolute;
+
+  margin-left: 7.3rem;
+}
